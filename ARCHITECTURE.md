@@ -34,13 +34,13 @@ Record the exact version you install in the Version column at scaffold time (for
 
 | Layer | Choice | Version |
 | --- | --- | --- |
-| Contracts | Solidity, Foundry, OpenZeppelin | PIN |
-| Network | Monad testnet (EVM) | verify chain ID and RPC in the Monad docs |
-| Token | MockUSD, 6 decimals, faucet | n/a |
-| Login | Privy embedded wallets (Dynamic is the fallback) | PIN |
-| App | Next.js, TypeScript, Tailwind, wagmi, viem, PWA manifest | PIN |
-| Social data | Supabase (Postgres, Auth, Realtime) | hosted |
-| Keeper | Node script on a cron (GitHub Actions or Vercel cron) | PIN |
+| Contracts | Solidity, Foundry, OpenZeppelin | Solidity 0.8.24, forge 1.8.5, OpenZeppelin v5.7.0 |
+| Network | Monad testnet (EVM) | Chain ID 10143, RPC https://testnet-rpc.monad.xyz |
+| Token | MockUSD, 6 decimals, faucet | ERC-20 with 1-hr cooldown |
+| Login | Privy embedded wallets (Dynamic is the fallback) | @privy-io/react-auth ^1.88.4 |
+| App | Next.js, TypeScript, Tailwind, wagmi, viem, PWA manifest | Next.js 14.2.15, React 18.3.1, TypeScript 5.6.3, Tailwind 3.4.13, wagmi 2.12.17, viem 2.21.26 |
+| Social data | Supabase (Postgres, Auth, Realtime) | @supabase/supabase-js ^2.45.4 |
+| Keeper | Node script on a cron (GitHub Actions or Vercel cron) | Node v18.19.1, viem ^2.21.26, GitHub Actions |
 | Gas | Sponsored via paymaster or relayer if supported; else pre-funded wallets | decision D11 |
 | Debugging | Tenderly for simulation, Quicknode or Alchemy RPC | n/a |
 

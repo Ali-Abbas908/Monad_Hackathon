@@ -20,16 +20,16 @@ Running log. Paste this file into every model session so all sessions work from 
 | D12 | 2026-10-10 | Equal splits only; mode is fixed at group creation | Scope for a three-day build |
 | D13 | 2026-10-10 | Testnet only; no UPI, fiat or bank integration | Onchain addresses are not UPI merchants; do not imply otherwise |
 | D14 | 2026-10-10 | Chat is an activity feed with comments, not a full messenger | Chat is a commodity and would consume the schedule |
+| D15 | 2026-10-10 | Monad testnet chain ID: 10143, RPC: https://testnet-rpc.monad.xyz, Explorer: https://testnet.monadexplorer.com | Official Monad testnet parameters confirmed |
+| D16 | 2026-10-10 | Privy chosen for embedded wallet onboarding (@privy-io/react-auth) | Provides seedless email/Google login for demo UX |
+| D17 | 2026-10-10 | Equal split is sufficient for Track 2 core demo path; uneven splits deferred to stretch | Meets Track 2 scope within hackathon timeline |
+| D18 | 2026-10-10 | Invite format is deep link (`/join/[groupId]`) | Fastest frictionless join path for new users |
 
 ## Open questions
 
 | ID | Question | Owner | Needed by |
 | --- | --- | --- | --- |
 | Q1 | Exact submission time and time zone on the application platform | Both | 10 Oct |
-| Q2 | Privy or Dynamic for login (check which supports sponsored gas on Monad testnet) | B2 | 10 Oct |
-| Q3 | Are uneven splits needed for the demo, or is the equal split enough | Both | 11 Oct |
-| Q4 | Monad testnet chain ID, RPC URL and explorer links (confirm in the Monad docs) | B1 | 10 Oct |
-| Q5 | Which invite format: link with group id, or short code | B2 | 11 Oct |
 
 ## Deployed addresses
 

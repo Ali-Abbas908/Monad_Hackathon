@@ -1,0 +1,14 @@
+{
+  "name": "group-pay-keeper",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "dotenv": "^16.4.5",
+    "viem": "^2.21.26"
+  }
+}

@@ -1,0 +1,34 @@
+name: Group Pay Keeper
+
+on:
+  schedule:
+    # Run every 10 minutes
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+jobs:
+  run-keeper:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        working-directory: ./keeper
+        run: npm ci
+
+      - name: Run Periodic Pull & Event Indexer
+        working-directory: ./keeper
+        env:
+          RPC_URL: ${{ secrets.RPC_URL }}
+          GROUP_POOL_ADDRESS: ${{ secrets.GROUP_POOL_ADDRESS }}
+          KEEPER_PRIVATE_KEY: ${{ secrets.KEEPER_PRIVATE_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          RUN_ONCE: "true"
+        run: npm start
