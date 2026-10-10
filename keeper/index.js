@@ -1,6 +1,9 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
+import WebSocket from 'ws';
+global.WebSocket = WebSocket;
+
 import { createPublicClient, createWalletClient, http, decodeEventLog } from 'viem';
 import { privateKeyToAccount } from 'viem/accounts';
 import { createClient } from '@supabase/supabase-js';

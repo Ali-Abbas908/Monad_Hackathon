@@ -24,3 +24,13 @@ yarn-error.log*
 # OS
 .DS_Store
 Thumbs.db
+# Foundry
+contracts/broadcast/
+contracts/cache/
+
+# Node
+node_modules/
+
+# Environment files
+.env
+.env.local

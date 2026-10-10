@@ -9,6 +9,7 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.45.4",
     "dotenv": "^16.4.5",
-    "viem": "^2.21.26"
+    "viem": "^2.21.26",
+    "ws": "^8.22.0"
   }
 }
